@@ -194,7 +194,8 @@ echo -e "\n\e[94m     ##########################################################
 fi
 while [[ ! "$host" =~ $hostPattern ]] || ! isAvailable $command ; do
     if [[ -z $host && -z $command ]]; then
-        echo -e "\n \e[32mPlease insert hostname and operation to run:\e[0m\n"
+        echo -e "\n \e[32mPlease insert hostname and operation (and MySQL database if you want) to run:\e[0m\n"
+        echo -e " \e[32mExample: \e[94mmysite add mysite_db\e[0m\n"
         read hostInput operInput databaseInput
         host=$hostInput
         command=$operInput

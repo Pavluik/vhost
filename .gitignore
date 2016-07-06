@@ -3,5 +3,5 @@
 
 # But not these files...
 !.gitignore
-!vhost.sh
+!vhost
 !README.md
